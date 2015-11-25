@@ -1,0 +1,35 @@
+//
+// Simplr Grid
+// By Samarjeet Singh
+//
+@mixin createGrid($cname: 'grid', $numCol: 12, $mobile-width: 768px) {
+	*, *:after, *:before {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.#{$cname} {
+		overflow: hidden;
+		width: 100%;
+		&:after {
+			content: "";
+			clear: both;
+		}
+		@include createColumns($numCol, 'col', $mobile-width);
+	}
+	[class*='col-'] {
+		float: left;
+		min-height: 1px;
+	}
+}
+// columns
+@mixin createColumns($num, $className, $mbWidth) {
+	@for $i from 1 through $num {
+		.#{$className}-#{$i} {
+			width: $i/$num * 100%;
+			@media screen and (max-width: $mbWidth) {
+				width: 100%;
+			}
+		}
+	}
+}
