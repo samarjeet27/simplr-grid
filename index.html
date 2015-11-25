@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,scale=1.0">
+	<title>Simplr Grid</title>
+	<link rel="stylesheet" href="page.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1><span>Simplr Grid</span></h1>
+			<p>The Simplest Responsive CSS Grid in ~35 lines of SASS</p>
+		</div>
+	</header>
+	<section>
+		<div class="container">
+			<h1>Getting Started</h1>
+			<p>After importing simplr-grid, use the following code to create a <u>12 column grid</u>.</p>
+			<div class="code">
+				<code>
+					<span class="pre">@include</span> createGrid(<span class="str">'grid-12'</span>, <span class="num">12</span>);
+				</code>
+			</div>
+			<h1>Demo</h1>
+			<p>12 Column Grid</p>
+			<div class="grid">
+				<div class="col-6">col-6</div>
+				<div class="col-6">col-6</div>
+			</div>
+
+			<div class="grid">
+				<div class="col-4">col-4</div>
+				<div class="col-4">col-4</div>
+				<div class="col-4">col-4</div>
+			</div>
+
+			<div class="grid">
+				<div class="col-3">col-3</div>
+				<div class="col-3">col-3</div>
+				<div class="col-3">col-3</div>
+				<div class="col-3">col-3</div>
+			</div>
+
+			<div class="grid">
+				<div class="col-4">col-4</div>
+				<div class="col-8">col-8</div>
+			</div>
+			<div class="grid">
+				<div class="col-3">col-3</div>
+				<div class="col-4">col-4</div>
+				<div class="col-5">col-5</div>
+			</div>
+
+			<div class="grid">
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-1</div>
+				<div class="col-2">col-2</div>
+				<div class="col-3">col-3</div>
+				<div class="col-5">col-5</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<p align="center">By <a href="http://github.com/samarjeet27/">@samarjeet27</a></p>
+		</div>
+	</footer>
+</body>
+</html>
