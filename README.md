@@ -1,7 +1,7 @@
 Simplr-Grid
 ---
 
-Simple and Responsive CSS grid in less than 35 lines of SASS.
+A Simpler, Responsive CSS grid in less than 35 lines of SASS.
 
 ```sass
 @import 'simplr-grid';
